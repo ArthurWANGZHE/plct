@@ -1,0 +1,21 @@
+wget https://rpmfind.net/linux/centos/8-stream/BaseOS/x86_64/os/Packages/rpm-4.14.3-19.el8.x86_64.rpm
+wget https://rpmfind.net/linux/centos/8-stream/BaseOS/x86_64/os/Packages/rpm-libs-4.14.3-19.el8.x86_64.rpm
+wget https://dl.rockylinux.org/pub/rocky/8/BaseOS/aarch64/os/Packages/s/selinux-policy-3.14.3-108.el8.noarch.rpm
+
+sudo yum install http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/libsemanage-2.9-9.el8.x86_64.rpm --allowerasing -y
+sudo yum install http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/policycoreutils-2.9-19.el8.x86_64.rpm -y
+
+sudo rpm -i --force rpm-4.14.3-19.el8.x86_64.rpm
+sudo rpm -i --force rpm-libs-4.14.3-19.el8.x86_64.rpm
+sudo rpm -i --force selinux-policy-3.14.3-108.el8.noarch.rpm
+
+sudo yum install http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/python3-libsemanage-2.9-9.el8.x86_64.rpm -y
+sudo yum install http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/python3-policycoreutils-2.9-19.el8.noarch.rpm -y
+sudo yum install http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/policycoreutils-python-utils-2.9-19.el8.noarch.rpm -y
+sudo yum install http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/selinux-policy-minimum-3.14.3-108.el8.noarch.rpm -y
+sudo yum install http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/libseccomp-2.5.2-1.el8.x86_64.rpm -y
+
+sudo yum install https://download-ib01.fedoraproject.org/pub/epel/8/Everything/x86_64/Packages/s/snapd-selinux-2.57.6-2.el8.noarch.rpm -y
+
+sudo yum install snapd -y
+sudo yum update snapd  -y
