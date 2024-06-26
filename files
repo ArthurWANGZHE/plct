@@ -19,3 +19,18 @@ sudo yum install https://download-ib01.fedoraproject.org/pub/epel/8/Everything/x
 
 sudo yum install snapd -y
 sudo yum update snapd  -y
+
+
+
+mkdir workspace
+
+cd workspace
+
+git clone [https://github.com/osrf/gazebo.git](https://github.com/osrf/gazebo.git)
+
+cd gazebo
+
+mkdir build
+
+cd build
+cmake ../
