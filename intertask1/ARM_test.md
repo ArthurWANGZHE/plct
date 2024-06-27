@@ -9,7 +9,7 @@
 #### 安装tap-windows
 [https://build.openvpn.net/downloads/releases/tap-windows-9.24.7-I601-Win10.exe](https://build.openvpn.net/downloads/releases/tap-windows-9.24.7-I601-Win10.exe)
 ### 配置虚拟机
-#### X86
+#### ARM
 ##### 设置img
 ```
 qemu-img create -f qcow2 openEuler-24.03-LTS-SP3-aarch64.img 50G
