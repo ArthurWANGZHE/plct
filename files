@@ -45,3 +45,5 @@ cd sdformat9.3.0/build
 cmake  ../
 
 sudo make install
+
+https://github.com/ProfFan/ignition-math
