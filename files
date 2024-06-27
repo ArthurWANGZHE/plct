@@ -34,3 +34,14 @@ mkdir build
 
 cd build
 cmake ../
+
+https://github.com/gazebosim/sdformat/releases/tag/sdformat9_9.3.0
+
+
+mkdir sdformat9.3.0/build
+
+cd sdformat9.3.0/build
+
+cmake  ../
+
+sudo make install
