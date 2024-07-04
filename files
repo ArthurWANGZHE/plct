@@ -64,3 +64,5 @@ baseurl=https://eulermaker.compass-ci.openeuler.openatom.cn/api/ems1/repositorie
 enabled=1
 gpgcheck=0
 EOF'
+
+dnf install "ros-humble-*" --skip-broken --exclude=ros-humble-generate-parameter-library-example
