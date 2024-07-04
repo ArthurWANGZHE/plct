@@ -54,3 +54,13 @@ git clone https://github.com/Homebrew/brew homebrew
 eval "$(homebrew/bin/brew shellenv)"
 brew update --force --quiet
 chmod -R go-w "$(brew --prefix)/share/zsh"
+
+
+
+bash -c 'cat << EOF > /etc/yum.repos.d/ROS.repo
+[openEulerROS-humble]
+name=openEulerROS-humble
+baseurl=https://eulermaker.compass-ci.openeuler.openatom.cn/api/ems1/repositories/ROS-SIG-Multi-Version_ros-humble_openEuler-24.03-LTS-TEST4/openEuler%3A24.03-LTS/aarch64/
+enabled=1
+gpgcheck=0
+EOF'
