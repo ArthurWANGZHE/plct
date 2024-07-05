@@ -98,25 +98,30 @@ source ~/.bashrc
 ### 1. ROS2 包工具
 #### 1.1 创建包
 使用命令 ros2 pkg create --build-type ament_cmake riscv-ros-pkg 创建一个新的ROS2包。
+
 ![img.png](img.png)
 
 #### 1.2 包中的可执行文件
 通过 ros2 pkg executables turtlesim 查看 turtlesim 包中的可执行文件。
+
 ![img_1.png](img_1.png)
 
 
 #### 1.3 列出所有包
 运行 ros2 pkg list 来列出当前系统中所有的ROS2包。
+
 ![img_2.png](img_2.png)
 
 
 #### 1.4 包的安装路径
 使用 ros2 pkg prefix turtlesim 来查找 turtlesim 包的安装路径。
+
 ![img_3.png](img_3.png)
 
 
 #### 1.5 包的XML文件
 通过 ros2 pkg xml turtlesim 查看 turtlesim 包的XML描述文件。
+
 ![img_4.png](img_4.png)
 
 ### 2. 运行工具
