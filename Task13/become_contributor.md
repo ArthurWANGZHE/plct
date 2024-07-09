@@ -8,6 +8,7 @@
 ![img.png](attachment/img.png)
 
 ![img_1.png](attachment/img_1.png)
+
 复制到终端执行这两行命令
 ```
 git config --global user.name 'yourusername' 
