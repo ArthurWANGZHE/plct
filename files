@@ -235,3 +235,49 @@ git clone https://github.com/ignitionrobotics/ign-fuel-tools -b ign-fuel-tools1
 git clone https://github.com/ignitionrobotics/ign-math -b ign-math4
 git clone https://github.com/ignitionrobotics/ign-msgs -b ign-msgs1
 git clone https://github.com/ignitionrobotics/ign-transport -b ign-transport4
+
+
+
+
+
+
+
+
+
+
+如何在openEuler 2404 ros2-humble下使用google的Cartographer
+引用ref：
+cartographer github repo
+openEulerRunner
+build guide
+colcon guide
+x86 平台下指北
+首先跑起来openEuler的x86镜像。
+本人使用openeulerRunner直接跑起来了，再次跳过。
+sudo apt install python3-colcon-common-extensions python3-rosdepPrerequest: 
+ros2 humble openeuler2403
+Don't panic.
+Build from source.
+首先下载src openeuler下面的humble分支到xx_ws/src/下面，把对应的压缩包解压，并且
+mkdir ros2_ws
+cd ros2_ws
+mkdir src
+cd src
+
+git clone https://gitee.com/src-openeuler/cartographer_ros.git
+git checkout humble
+
+tar xf ros-humble-cartographer-ros_2.0.9000.orig.tar.gz
+tar xf ros-humble-cartographer-ros-msgs_2.0.9000.orig.tar.gz
+tar xf ros-humble-cartographer-rviz_2.0.9000.orig.tar.gz
+
+cd ros-humble-cartographer-ros-2.0.9000/
+patch -p1 < ../cartographer-ros-adapt-glog-0.6.0.patch
+
+patch -p1 < ../cartographer-ros-fix-multiple-definition-error.patch
+patch -p1 < ../cartographer-ros-fix-absl.patch
+cd ..
+patch -p1 < ../cartographer-rviz-fix-absl.patch
+cd ../../..
+source /opt/ros/humble/setup.bash
+colcon build
