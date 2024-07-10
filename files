@@ -227,3 +227,11 @@ dnf install "ros-humble-*" --skip-broken --exclude=ros-humble-generate-parameter
 
 source /opt/ros/humble/setup.sh
 source ~/.bashrc
+
+https://blog.csdn.net/u013013023/article/details/109998697
+git clone https://github.com/ignitionrobotics/ign-cmake -b ign-cmake0
+git clone https://github.com/ignitionrobotics/ign-common -b ign-common1
+git clone https://github.com/ignitionrobotics/ign-fuel-tools -b ign-fuel-tools1
+git clone https://github.com/ignitionrobotics/ign-math -b ign-math4
+git clone https://github.com/ignitionrobotics/ign-msgs -b ign-msgs1
+git clone https://github.com/ignitionrobotics/ign-transport -b ign-transport4
