@@ -43,3 +43,5 @@ ros2 pkg list | grep stage
 此时编译成功应该显示如下：
 
 ![img.png](attachment/img.png)
+
+![img.png](img.png)

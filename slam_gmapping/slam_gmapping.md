@@ -2,8 +2,6 @@
 
 相关仓库:[github仓库](https://github.com/Project-MANAS/slam_gmapping)
 
-
-
 ## 克隆仓库并编译
 ```bash
 mkdir slam_gmapping
@@ -17,3 +15,5 @@ colcon build
 source install/setup.bash
 ros2 pkg list | grep slam
 ```
+
+![img.png](img.png)
