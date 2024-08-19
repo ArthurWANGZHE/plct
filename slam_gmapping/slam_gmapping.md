@@ -1,9 +1,11 @@
 # 从源码编译 slam_gmapping
-[github仓库](https://github.com/Project-MANAS/slam_gmapping)
+
+相关仓库:[github仓库](https://github.com/Project-MANAS/slam_gmapping)
+
 
 
 ## 克隆仓库并编译
-```angular2html
+```bash
 mkdir slam_gmapping
 cd slam_gmapping
 mkdir src
