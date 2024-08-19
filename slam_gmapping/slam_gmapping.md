@@ -15,7 +15,12 @@ colcon build
 source install/setup.bash
 ros2 pkg list | grep slam
 ```
+###第一个报错解决
+```angular2html
+[ERROR] [launch]: Caught exception in launch (see debug for traceback): __init__() missing 1 required keyword-only argument: 'node_executable'
 
+```
 ![img.png](img.png)
+修改launch文件中
+讲`node_executable=....`改成`executable`
 
-![img_1.png](img_1.png)
