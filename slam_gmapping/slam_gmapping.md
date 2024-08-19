@@ -24,3 +24,6 @@ ros2 pkg list | grep slam
 修改launch文件中
 讲`node_executable=....`改成`executable`
 
+
+
+![img_1.png](img_1.png)
