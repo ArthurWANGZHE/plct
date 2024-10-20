@@ -185,3 +185,6 @@ LiDAR到BEV：将LiDAR点云直接投影到与地面平行的BEV平面上。
 这种设计减少了手工设计的需要，提高了系统的鲁棒性，并能够处理更复杂的交通场景。BEV感知技术的发展，使得自动驾驶系统能够更准确地理解和预测车辆周围的环境，从而做出更安全的驾驶决策。
 
 ![5.png](attachment/5.png)
+
+**参考文献**
+>Delving into the Devils of Bird’s-eye-view Perception: A Review, Evaluation and Recipe
