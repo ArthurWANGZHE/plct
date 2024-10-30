@@ -1,4 +1,75 @@
 ## agibot
+>参考文档: 
+> 
+> https://github.com/AgibotTech/agibot_x1_infer
+> 
+> https://github.com/microsoft/onnxruntime
+## 安装步骤
+1. 更新cmake
+2. 安装 ONNX Runtime
+3. 安装依赖
+4. 安装agibot
+
+### 1. 更新cmake
+从官网下载 [cmake](https://cmake.org/download/) 安装
+
+### 2. 安装 ONNX Runtime
+安装相关依赖后git clone下来仓库进行编译安装
+```angular2html
+sudo apt update
+sudo apt install -y build-essential cmake git libprotobuf-dev protobuf-compiler
+
+git clone --recursive https://github.com/microsoft/onnxruntime
+
+cd onnxruntime
+./build.sh --config Release --build_shared_lib --parallel
+
+cd build/Linux/Release/
+sudo make install
+```
+
+直接编译出现如下报错:
+```
+/home/arthur/onnxruntime/onnxruntime/core/providers/cpu/math/element_wise_ops.cc:873:85: error: type/value mismatch at argument 1 in template parameter list for ‘template<class OtherDerived> const Eigen::CwiseBinaryOp<Eigen::internal::scalar_max_op<typename Eigen::internal::traits<T>::Scalar, typename Eigen::internal::traits<OtherDerived>::Scalar>, const Derived, const OtherDerived> Eigen::ArrayBase<Derived>::max(const Eigen::ArrayBase<OtherDerived>&) const [with OtherDerived = OtherDerived; Derived = Eigen::ArrayWrapper<Eigen::Map<const Eigen::Matrix<long unsigned int, -1, 1, 0, -1, 1>, 0, Eigen::Stride<0, 0> > >]’
+  873 | per_iter_bh.EigenInput0<T>().array().template max<Eigen::PropagateNaN>(
+      | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+
+  874 |     per_iter_bh.EigenInput1<T>().array());
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                              
+
+/home/arthur/onnxruntime/onnxruntime/core/providers/cpu/math/element_wise_ops.cc:873:85: note:   expected a type, got ‘Eigen::PropagateNaN’
+```
+报错提示在文件`onnxruntime/onnxruntime/core/providers/cpu/math/element_wise_ops.cc使用了Eigen::PropagateNaN`作为模板参数的方式不正确
+
+修改方法 删除所有 `<eigen::PropagateNaN> `后进行编译
+
+![img_2.png](attachment/img_2.png)
+
+### 3. 安装依赖
+```
+sudo apt install jstest-gtk \
+                 ros-humble-xacro \
+                 ros-humble-gazebo-ros-pkgs \
+                 ros-humble-gazebo-ros2-control \
+                 ros-humble-joint-state-publisher \
+                 ros-humble-joint-state-broadcaster \
+```
+
+### 4. 安装Agibot
+根据文档教程提示安装
+```
+source /opt/ros/humble/setup.bash
+source url.bashrc
+
+# Build
+./build.sh $DOWNLOAD_FLAGS
+
+# Test
+./test.sh $DOWNLOAD_FLAGS
+```
+
+出现如下报错
+```
 e/joy_stick_module/joy.cc:30:
 /home/arthur/agibot_x1_infer-main/src/module/joy_stick_module/joy.h:44:8: error: ‘vector’ in namespace ‘std’ does not name a template type
    44 |   std::vector<double> axis;
@@ -85,9 +156,10 @@ e/joy_stick_module/joy.cc:30:
 /home/arthur/agibot_x1_infer-main/src/module/joy_stick_module/joy.cc:350:12: error: ‘struct xyber_x1_infer::joy_stick_module::JoyStruct’ has no member named ‘axis’
   350 |   joy_msg_.axis.resize(0);
       |            ^~~~
+```
+报错提示缺少头文件
 
-![img.png](img.png)
+修改方法在文件中增加头文件 `#include<vector>`
 
-![img_1.png](img_1.png)
+![img.png](attachment/img.png)
 
-![img_2.png](img_2.png)
