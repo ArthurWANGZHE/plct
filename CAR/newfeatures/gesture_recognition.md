@@ -25,3 +25,9 @@
 
 阈值设定困难：需要手动设定不同手势的关键点角度和距离的阈值，这往往需要专业知识和大量的实验来确定。
 鲁棒性问题：对于手部遮挡、光照变化等情况的鲁棒性较差，可能会影响手势识别的准确性
+
+
+## 参考链接
+1. https://blog.csdn.net/weixin_46218747/article/details/127905455
+2. https://blog.csdn.net/qq_40387714/article/details/141279664
+3. https://blog.csdn.net/qq_42856191/article/details/143128771
