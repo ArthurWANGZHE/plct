@@ -1,0 +1,2 @@
+[console_scripts]
+face = face.face:main

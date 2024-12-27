@@ -1,0 +1,5 @@
+  File "/root/Desktop/face/install/face/lib/python3.11/site-packages/face/face.py", line 8
+    def main()
+              ^
+SyntaxError: expected ':'
+

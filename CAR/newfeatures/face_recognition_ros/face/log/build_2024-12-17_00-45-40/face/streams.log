@@ -1,0 +1,25 @@
+[0.760s] Invoking command in '/root/Desktop/face': PYTHONPATH=/root/Desktop/face/build/face/prefix_override:/usr/local/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/root/Desktop/face/install/face/lib/python3.11/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/face build --build-base /root/Desktop/face/build/face/build install --record /root/Desktop/face/build/face/install.log --single-version-externally-managed install_data
+[1.009s] running egg_info
+[1.027s] writing build/face/face.egg-info/PKG-INFO
+[1.028s] writing dependency_links to build/face/face.egg-info/dependency_links.txt
+[1.028s] writing entry points to build/face/face.egg-info/entry_points.txt
+[1.028s] writing requirements to build/face/face.egg-info/requires.txt
+[1.028s] writing top-level names to build/face/face.egg-info/top_level.txt
+[1.168s] reading manifest file 'build/face/face.egg-info/SOURCES.txt'
+[1.169s] writing manifest file 'build/face/face.egg-info/SOURCES.txt'
+[1.169s] running build
+[1.169s] running build_py
+[1.169s] copying face/face.py -> /root/Desktop/face/build/face/build/lib/face
+[1.170s] running install
+[1.176s] running install_lib
+[1.195s] copying /root/Desktop/face/build/face/build/lib/face/face.py -> /root/Desktop/face/install/face/lib/python3.11/site-packages/face
+[1.195s] byte-compiling /root/Desktop/face/install/face/lib/python3.11/site-packages/face/face.py to face.cpython-311.pyc
+[1.196s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (face.py, line 50)
+[1.196s] running install_data
+[1.196s] running install_egg_info
+[1.216s] removing '/root/Desktop/face/install/face/lib/python3.11/site-packages/face-0.0.0-py3.11.egg-info' (and everything under it)
+[1.216s] Copying build/face/face.egg-info to /root/Desktop/face/install/face/lib/python3.11/site-packages/face-0.0.0-py3.11.egg-info
+[1.218s] running install_scripts
+[1.291s] Installing face script to /root/Desktop/face/install/face/lib/face
+[1.291s] writing list of installed files to '/root/Desktop/face/build/face/install.log'
+[1.317s] Invoked command in '/root/Desktop/face' returned '0': PYTHONPATH=/root/Desktop/face/build/face/prefix_override:/usr/local/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/root/Desktop/face/install/face/lib/python3.11/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/face build --build-base /root/Desktop/face/build/face/build install --record /root/Desktop/face/build/face/install.log --single-version-externally-managed install_data

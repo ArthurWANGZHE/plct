@@ -1,0 +1,47 @@
+[0.000000] (-) TimerEvent: {}
+[0.000803] (face) JobQueued: {'identifier': 'face', 'dependencies': OrderedDict()}
+[0.000858] (face) JobStarted: {'identifier': 'face'}
+[0.099339] (-) TimerEvent: {}
+[0.200754] (-) TimerEvent: {}
+[0.301353] (-) TimerEvent: {}
+[0.401833] (-) TimerEvent: {}
+[0.502320] (-) TimerEvent: {}
+[0.602848] (-) TimerEvent: {}
+[0.703449] (-) TimerEvent: {}
+[0.750108] (face) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/face', 'build', '--build-base', '/root/Desktop/face/build/face/build', 'install', '--record', '/root/Desktop/face/build/face/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/Desktop/face', 'env': {'IMSETTINGS_INTEGRATE_DESKTOP': 'yes', 'SHELL': '/bin/bash', 'ROS_VERSION': '2', 'WINDOWID': '0', 'QT_SCREEN_SCALE_FACTORS': '1', 'COLORTERM': 'truecolor', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'HISTCONTROL': 'ignoredups', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'GTK_IM_MODULE': 'gtk-im-context-simple', 'ROS_PYTHON_VERSION': '3', 'HISTSIZE': '1000', 'HOSTNAME': 'localhost', 'LANGUAGE': '', 'SSH_AUTH_SOCK': '/run/user/0/keyring/ssh', 'XDG_DATA_HOME': '/root/.local/share', 'XDG_CONFIG_HOME': '/root/.config', 'XMODIFIERS': '@im=none', 'DESKTOP_SESSION': 'deepin', 'SSH_AGENT_PID': '3047', 'XDG_SEAT': 'seat0', 'PWD': '/root/Desktop/face/build/face', 'LOGNAME': 'root', 'XDG_SESSION_DESKTOP': 'deepin', 'XDG_SESSION_TYPE': 'x11', 'XAUTHORITY': '/run/lightdm/root/xauthority', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/root', 'HOME': '/root', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'XDG_CURRENT_DESKTOP': 'Deepin', 'AMENT_PREFIX_PATH': '/root/Desktop/face/install/face:/opt/ros/humble', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'COLCON_PREFIX_PATH': '/root/Desktop/face/install', 'IMSETTINGS_MODULE': 'none', 'QT_QPA_PLATFORM': '', 'XDG_CACHE_HOME': '/root/.cache', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/root/Desktop/face/build/face/prefix_override:/usr/local/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/root/Desktop/face/install/face/lib/python3.11/site-packages:/root/Desktop/face/install/face/lib/python3.11/site-packages:/opt/ros/humble/lib/python3.11/site-packages', 'COLCON': '1', 'TERM': 'xterm-256color', 'USER': 'root', 'D_DXCB_FORCE_OVERRIDE_HIDPI': '1', 'DISPLAY': ':0', 'QT_DBL_CLICK_DIST': '15', 'SHLVL': '1', 'QT_IM_MODULE': 'xim', 'XDG_VTNR': '1', 'XDG_SESSION_ID': '3', 'QT_LINUX_ACCESSIBILITY_ALWAYS_ON': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib64:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib', 'XDG_RUNTIME_DIR': '/run/user/0', 'ROS_LOCALHOST_ONLY': '0', 'KDEDIRS': '/usr', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/sbin:/usr/local/bin:/usr/bin:/bin:/root/bin', 'GDMSESSION': 'deepin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'MAIL': '/var/spool/mail/root', 'ROS_DISTRO': 'humble', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '36389', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/deepin-terminal.desktop', 'OLDPWD': '/root/Desktop', '_': '/usr/bin/env'}, 'shell': False}
+[0.803834] (-) TimerEvent: {}
+[0.904314] (-) TimerEvent: {}
+[0.997211] (face) StdoutLine: {'line': b'running egg_info\n'}
+[1.004860] (-) TimerEvent: {}
+[1.016355] (face) StdoutLine: {'line': b'writing build/face/face.egg-info/PKG-INFO\n'}
+[1.016574] (face) StdoutLine: {'line': b'writing dependency_links to build/face/face.egg-info/dependency_links.txt\n'}
+[1.016663] (face) StdoutLine: {'line': b'writing entry points to build/face/face.egg-info/entry_points.txt\n'}
+[1.016810] (face) StdoutLine: {'line': b'writing requirements to build/face/face.egg-info/requires.txt\n'}
+[1.016898] (face) StdoutLine: {'line': b'writing top-level names to build/face/face.egg-info/top_level.txt\n'}
+[1.105328] (-) TimerEvent: {}
+[1.161079] (face) StdoutLine: {'line': b"reading manifest file 'build/face/face.egg-info/SOURCES.txt'\n"}
+[1.161993] (face) StdoutLine: {'line': b"writing manifest file 'build/face/face.egg-info/SOURCES.txt'\n"}
+[1.162291] (face) StdoutLine: {'line': b'running build\n'}
+[1.162436] (face) StdoutLine: {'line': b'running build_py\n'}
+[1.162545] (face) StdoutLine: {'line': b'copying face/face.py -> /root/Desktop/face/build/face/build/lib/face\n'}
+[1.162833] (face) StdoutLine: {'line': b'running install\n'}
+[1.168844] (face) StdoutLine: {'line': b'running install_lib\n'}
+[1.192560] (face) StdoutLine: {'line': b'copying /root/Desktop/face/build/face/build/lib/face/face.py -> /root/Desktop/face/install/face/lib/python3.11/site-packages/face\n'}
+[1.193387] (face) StdoutLine: {'line': b'byte-compiling /root/Desktop/face/install/face/lib/python3.11/site-packages/face/face.py to face.cpython-311.pyc\n'}
+[1.193825] (face) StderrLine: {'line': b'  File "/root/Desktop/face/install/face/lib/python3.11/site-packages/face/face.py", line 8\n'}
+[1.194057] (face) StderrLine: {'line': b'    def main()\n'}
+[1.194140] (face) StderrLine: {'line': b'              ^\n'}
+[1.194215] (face) StderrLine: {'line': b"SyntaxError: expected ':'\n"}
+[1.194310] (face) StderrLine: {'line': b'\n'}
+[1.194362] (face) StdoutLine: {'line': b'running install_data\n'}
+[1.194408] (face) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.205810] (-) TimerEvent: {}
+[1.216673] (face) StdoutLine: {'line': b"removing '/root/Desktop/face/install/face/lib/python3.11/site-packages/face-0.0.0-py3.11.egg-info' (and everything under it)\n"}
+[1.216897] (face) StdoutLine: {'line': b'Copying build/face/face.egg-info to /root/Desktop/face/install/face/lib/python3.11/site-packages/face-0.0.0-py3.11.egg-info\n'}
+[1.217521] (face) StdoutLine: {'line': b'running install_scripts\n'}
+[1.289280] (face) StdoutLine: {'line': b'Installing face script to /root/Desktop/face/install/face/lib/face\n'}
+[1.289467] (face) StdoutLine: {'line': b"writing list of installed files to '/root/Desktop/face/build/face/install.log'\n"}
+[1.306538] (-) TimerEvent: {}
+[1.312166] (face) CommandEnded: {'returncode': 0}
+[1.320466] (face) JobEnded: {'identifier': 'face', 'rc': 0}
+[1.321228] (-) EventReactorShutdown: {}

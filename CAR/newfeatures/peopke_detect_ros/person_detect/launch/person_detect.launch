@@ -1,0 +1,5 @@
+<launch>
+  <!-- Start the person tracking node -->
+  <node name="person_detect_node" pkg="person_detect" type="person_detect_script.py" output="screen">
+  </node>
+</launch>
