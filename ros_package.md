@@ -235,6 +235,8 @@ ros2 run hello_world say_hi
 ```
 
 这将允许通过ros2 run命令启动say_hi节点。
+
+参考链接:
 https://blog.csdn.net/ncnynl/article/details/125729398
 https://blog.csdn.net/weixin_42990464/article/details/129274840
 
