@@ -158,12 +158,12 @@ $ ros2 run hello_world say_hi
 ## 创建Python功能包
 
 ### 创建功能包
-相关选项同cmake一样
+使用以下命令创建功能包
 ```bash
 ros2 pkg create  --build-type ament_python --dependencies rclpy --node-name  say_hi hello_world
 ```
 
-此时查看项目树会发现和cmake的结构大相径庭
+查看此时的代码结构
 ```bash
 $ tree
 .
